@@ -1,0 +1,30 @@
+body {
+    background-color: #000;
+    color: #5487ff;
+}
+
+.center {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    display: inline;
+    width: 200px;
+    height: 100px;
+}
+
+#headers{
+
+}
+
+#footer {
+    width: 100%;
+    border-top: solid 2px black;
+    position: fixed;
+    bottom: 0;
+}
