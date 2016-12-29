@@ -4,13 +4,14 @@
     <title>The Great Roboto</title>
 
   <link href="style.css" rel="stylesheet">
+  <link href="/bootstrap-3.3.7-dist" rel="stylesheet">
 
   </head>
   <body>
 
       <div id='app'>
 
-        <div id='headers'>
+        <div id='headers' class='right'>
           <h1 id='title'>The Great Roboto's Guessing Game</h1>
           <h2 id='subtitle'>Salutations, Human.</br>
           The Great Roboto has a number in mind. </br>
@@ -18,20 +19,21 @@
           Use your 5 guesses wisely, human.</h2>
         </div>
 
-        <div id='main'>
+        <div class='right' id='main'>
           <div id='input-parent'>
             <!-- Player's guess input, and submit button -->
-            <h3>Oh, Great Roboto, is your number...</h3> <input type="number" maxlength="3" autofocus="autofocus" width="100px" placeholder="###"></br>
+            <h3>Oh, Great Roboto, is your number...</h3>
+            <input id='player-input' type="number" maxlength="3" autofocus="autofocus" width="100px" placeholder="###"></br>
             <button name="submit">Present Your Guess to The Great Roboto</button>
           </div>
 
           <div id='guesses'>
             <ul class='guesses-list'>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li class='guess'></li>
+              <li class='guess'></li>
+              <li class='guess'></li>
+              <li class='guess'></li>
+              <li class='guess'></li>
             </ul>
           </div>
 
@@ -46,16 +48,16 @@
 
 
     <div id='footer'>
-        <div>
-          <div class=''>
+        <div class='center'>
+          <div class='fullstack-logo'>
             <img src='img/fa-logo@2x.png'></img>
           </div>
 
-          <div class=''>
+          <div class='project-by'>
             <h4>Project by Liz Phillips</h4>
           </div>
 
-          <div class=''>
+          <div class='gracehopper-logo'>
             <img src='img/grace_hopper_academy.png'></img>
           </div>
 
