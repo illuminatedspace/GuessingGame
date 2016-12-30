@@ -9,7 +9,7 @@ body {
 
 .right {
     text-align: right;
-    float: right;
+    /*float: right;*/
 }
 
 ul {
