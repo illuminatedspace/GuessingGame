@@ -1,69 +1,74 @@
 <!DOCTYPE html>
+
+<!--To Do
+Convert your guesses from block elements to inline elements.
+Give each guess a border.
+Give each guess's border a slightly rounded edge.
+Increase the font size.
+Adjust the margins and padding until you like the look of your list.
+-->
 <html lang="en">
   <head>
     <title>The Great Roboto</title>
 
-  <link href="style.css" rel="stylesheet">
-  <link href="/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet"> <!-- not done correctly -->
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
   </head>
   <body>
+    <div class="container-fluid">
+      <div id="app">
 
-      <div id='app'>
-
-        <div id='headers' class='right'>
-          <h1 id='title'>TEST The Great Roboto's Guessing Game</h1>
-          <h2 id='subtitle'>Salutations, Human.</br>
-          The Great Roboto has a number in mind. </br>
+        <div id="headers" class="center" "row">
+          <h1 id="title">The Great Roboto's Guessing Game</h1>
+          <h2 id="subtitle">The Great Roboto has a number in mind. </br>
           Prevail by guessing the correct number between 1 and 100.</br>
           Use your 5 guesses wisely, human.</h2>
         </div>
 
-        <div class='right' id='main'>
-          <div id='input-parent'>
+        <div class="center" id="main" "row">
+          <div id="input-parent">
             <!-- Player's guess input, and submit button -->
             <h3>Oh, Great Roboto, is your number...</h3>
-            <input id='player-input' type="number" maxlength="3" autofocus="autofocus" width="100px" placeholder="###"></br>
-            <button name="submit">Present Your Guess to The Great Roboto</button>
+            <input id="player-input" type="number" maxlength="3" autofocus="autofocus" placeholder="###"></br>
+            <button class="btn btn-success" name="submit">Present Your Guess to The Great Roboto</button>
           </div>
 
-          <div id='guesses'>
-            <ul class='guesses-list'>
-              <li class='guess'></li>
-              <li class='guess'></li>
-              <li class='guess'></li>
-              <li class='guess'></li>
-              <li class='guess'></li>
+          <div id="guesses" "row">
+            <ul class="guesses-list">
+              <li class="guess">-</li>
+              <li class="guess">-</li>
+              <li class="guess">-</li>
+              <li class="guess">-</li>
+              <li class="guess">-</li>
             </ul>
           </div>
 
-          <div id="menu-btns">
+          <div id="menu-btns" class="row">
             <!-- reset and hint buttons -->
-            <button name="reset">Wipe This Game From Memory</button></br>
-            <button name="hint">Barter A Hint</button>
+            <button id="reset" class="btn" "btn-default" "col-sm-3" "col-sm-offset-3" name="reset">Wipe This Game From Memory</button>
+            <button id="hint" class="btn" "btn-default" "col-sm-3" name="hint">Barter A Hint</button>
           </div>
         </div>
       </div>
 
-
-
-    <div id='footer'>
-        <div class='center'>
-          <div class='fullstack-logo'>
-            <img src='img/fa-logo@2x.png'></img>
+      <div id="footer">
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="img/fa-logo@2x.png"></img>
           </div>
 
-          <div class='project-by'>
+          <div class="col-sm-4">
             <h4>Project by Liz Phillips</h4>
           </div>
 
-          <div class='gracehopper-logo'>
-            <img src='img/grace_hopper_academy.png'></img>
+          <div class="col-sm-4">
+            <img src="img/grace_hopper_academy.png"></img>
           </div>
+        </div>
 
 
         </div>
     </div>
-
   </body>
 </html>

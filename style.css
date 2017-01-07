@@ -17,6 +17,14 @@ ul {
     padding: 0;
 }
 
+.guess {
+    display: inline;
+    border: solid 3px black;
+    border-radius: 5px;
+    font-size: 5em;
+    padding: 0 25px;
+}
+
 img {
     display: inline;
     width: 200px;
@@ -30,6 +38,14 @@ img {
 #footer {
     width: 100%;
     border-top: solid 2px black;
-    position: static;
+    position: fixed;
     bottom: 0;
+    margin: 0 auto;
+    display: block;
+}
+
+#footer > .col-sm-4 {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
 }
