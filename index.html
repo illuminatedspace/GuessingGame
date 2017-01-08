@@ -1,18 +1,13 @@
 <!DOCTYPE html>
 
-<!--To Do
-Convert your guesses from block elements to inline elements.
-Give each guess a border.
-Give each guess's border a slightly rounded edge.
-Increase the font size.
-Adjust the margins and padding until you like the look of your list.
--->
 <html lang="en">
   <head>
     <title>The Great Roboto</title>
 
-  <link href="style.css" type="text/css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
 
   </head>
   <body>
@@ -29,9 +24,9 @@ Adjust the margins and padding until you like the look of your list.
         <div class="center" id="main" "row">
           <div id="input-parent">
             <!-- Player's guess input, and submit button -->
-            <h3>Oh, Great Roboto, is your number...</h3>
-            <input id="player-input" type="number" maxlength="3" autofocus="autofocus" placeholder="###"></br>
-            <button class="btn btn-success" name="submit">Present Your Guess to The Great Roboto</button>
+            <h3 id="input-title">Oh, Great Roboto, is your number...</h3>
+            <input id="player-input" class="center" type="text" maxlength="3" autofocus="autofocus" placeholder="###"></br>
+            <button id="submit-button" class="btn btn-success" name="submit">Present Your Guess</br>to The Great Roboto</button>
           </div>
 
           <div id="guesses" "row">
@@ -44,10 +39,12 @@ Adjust the margins and padding until you like the look of your list.
             </ul>
           </div>
 
+          <div id="roboto-response"></div>
+
           <div id="menu-btns" class="row">
             <!-- reset and hint buttons -->
-            <button id="reset" class="btn" "btn-default" "col-sm-3" "col-sm-offset-3" name="reset">Wipe This Game From Memory</button>
-            <button id="hint" class="btn" "btn-default" "col-sm-3" name="hint">Barter A Hint</button>
+            <button id="reset-button" class="btn btn-default col-sm-4 col-sm-offset-2" name="reset">Wipe This Game From Memory</button>
+            <button id="hint-button" class="btn btn-default col-sm-3 col-sm-offset-1" name="hint">Barter A Hint</button>
           </div>
         </div>
       </div>
