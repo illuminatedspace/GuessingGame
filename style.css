@@ -5,6 +5,24 @@
 
 body {
     font-family: 'Open Sans', HelveticaNeue, ArialBlack, Open Sans sans-serif;
+    background: url('img/question mark background 2-01.jpg') no-repeat center center fixed;
+    background-origin: border-box;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+#app {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 30px 30px;
+    padding: 20px 0 30px 0;
+    border-radius: 30px;
+
 }
 
 .center {
@@ -79,6 +97,7 @@ ul {
     border-radius: 5px;
     font-size: 5em;
     padding: 0 40px;
+    background-color: #fff;
 }
 
 #reset-button, #hint-button {
@@ -95,11 +114,18 @@ ul {
 
 #footer {
     width: 100%;
-    border-top: solid 2px black;
     position: fixed;
     bottom: 0;
+
+}
+
+#footer .row {
+    border-top: solid 2px black;
     margin: 0 auto;
     display: block;
+    background-color: #fff;
+    clear: both;
+    width: 100%;
 }
 
 #footer .col-sm-4 {
