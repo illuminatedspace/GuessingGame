@@ -124,7 +124,7 @@ $('document').ready(function() {
 		game = newGame();
 		$("#title").text("The Great Roboto's Guessing Game");
     	$("#subtitle").text("The Great Roboto has a number in mind. Prevail by guessing the correct number between 1 and 100. Use your 5 guesses wisely, human.");
-    	$(".guess").text("-");
-    	$("#hint, #submit").prop("disabled",false);
+    	// $(".guess").text("-");
+    	$("#hint-button, #submit-button").prop("disabled",false);
 	})
 });
