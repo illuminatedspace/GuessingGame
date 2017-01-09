@@ -31,10 +31,10 @@ Game.prototype.checkGuess = function() {
 			return "You have already guessed that number.";
 		} else {
 			this.pastGuesses.push(this.playersGuess);
-			var guessClass = '".g' + this.pastGuesses.length + '"';
-			console.log(guessClass);
-			$(guessClass).text(this.playersGuess);
-			// $('#guess-list li:nth-child('+ this.pastGuesses.length +')').text(this.playersGuess);
+			// var guessClass = '".g' + this.pastGuesses.length + '"';
+			// console.log(guessClass);
+			// $(guessClass).text(this.playersGuess);
+			$('#guess-list li:nth-child('+ this.pastGuesses.length +')').text(this.playersGuess);
 			if(this.pastGuesses.length === 5) {
 				$("#hint-button, #submit-button").prop("disabled", true);
 				$("#subtitle").text("Wipe This Game From Memory to start anew.")
